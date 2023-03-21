@@ -72,14 +72,10 @@
 				645D00C129006AE2008F0C7A /* FriendFaceApp.swift */,
 				645D00C329006AE2008F0C7A /* ContentView.swift */,
 				645D00D329006F6D008F0C7A /* UserView.swift */,
-				645D00CF29006B39008F0C7A /* User.swift */,
-				645D00D129006BB5008F0C7A /* Friend.swift */,
 				6412A4622900E491005F9390 /* DataController.swift */,
-				6412A4672900E7A3005F9390 /* CachedFriend+CoreDataClass.swift */,
-				6412A4682900E7A3005F9390 /* CachedFriend+CoreDataProperties.swift */,
-				6412A4692900E7A3005F9390 /* CachedUser+CoreDataClass.swift */,
-				6412A46A2900E7A3005F9390 /* CachedUser+CoreDataProperties.swift */,
-				6412A4642900E52A005F9390 /* FriendFace.xcdatamodeld */,
+				64D81B2B29C9C7C1000D0C98 /* Data Models */,
+				64D81B2C29C9C7FF000D0C98 /* Extensions */,
+				64D81B2D29C9C812000D0C98 /* @objc */,
 				645D00C529006AE2008F0C7A /* Assets.xcassets */,
 				645D00C729006AE2008F0C7A /* Preview Content */,
 			);
@@ -92,6 +88,34 @@
 				645D00C829006AE2008F0C7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64D81B2B29C9C7C1000D0C98 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				645D00CF29006B39008F0C7A /* User.swift */,
+				645D00D129006BB5008F0C7A /* Friend.swift */,
+				6412A4642900E52A005F9390 /* FriendFace.xcdatamodeld */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		64D81B2C29C9C7FF000D0C98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6412A4682900E7A3005F9390 /* CachedFriend+CoreDataProperties.swift */,
+				6412A46A2900E7A3005F9390 /* CachedUser+CoreDataProperties.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64D81B2D29C9C812000D0C98 /* @objc */ = {
+			isa = PBXGroup;
+			children = (
+				6412A4672900E7A3005F9390 /* CachedFriend+CoreDataClass.swift */,
+				6412A4692900E7A3005F9390 /* CachedUser+CoreDataClass.swift */,
+			);
+			path = "@objc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,13 +327,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FriendFace/Preview Content\"";
+				DEVELOPMENT_TEAM = N8877H53MP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lefthandedapps.FriendFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,13 +360,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FriendFace/Preview Content\"";
+				DEVELOPMENT_TEAM = N8877H53MP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,9 +376,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lefthandedapps.FriendFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

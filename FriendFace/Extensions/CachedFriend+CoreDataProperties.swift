@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension CachedFriend {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<CachedFriend> {

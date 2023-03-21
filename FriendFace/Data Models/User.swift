@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct User: Identifiable, Codable {
     let id: UUID
     let isActive: Bool
@@ -21,5 +20,17 @@ struct User: Identifiable, Codable {
     let tags: [String]
     let friends: [Friend]
     
-    static let example = User(id: UUID(), isActive: true, name: "Bilbo Baggins", age: 111, company: "Hobbit Adventures", email: "none@none.com", address: "The Shire", about: "Burglar", registered: Date.now, tags: ["Swift", "SwiftUI", "Dogs", "Coffee"], friends: [])
+    static let example = User(
+		id: UUID(),
+		isActive: true,
+		name: "Bilbo Baggins",
+		age: 111,
+		company: "Hobbit Adventures",
+		email: "none@none.com",
+		address: "The Shire",
+		about: "Burglar",
+		registered: Date.now,
+		tags: ["Swift", "SwiftUI", "Dogs", "Coffee"],
+		friends: []
+	)
 }
